@@ -13,6 +13,23 @@ module.exports = {
         test: /\.js/,
         exclude: /node_modules/,
         use: 'babel-loader'
+      },
+      {
+        test: /\.(svg|png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash].[ext]',
+              outputPath: 'build/images',
+              publicPath: 'images'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader']
       }
     ]
   }

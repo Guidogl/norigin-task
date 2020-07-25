@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Epg from '../epg/Epg'
+
 export default function App() {
-  return <h1>Hello Gvidas</h1>
+  return <Epg />
 }
