@@ -5,11 +5,13 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 import Dateline from '../dateline/Dateline'
 
+import Channels from '../channels/Channels'
+
 import './Epg.css'
 
-export default function Epg({ load }) {
+export default function Epg() {
   const [data, setData] = React.useState([])
-  const [start, setStart] = React.useState([])
+  //   const [start, setStart] = React.useState([])
 
   React.useEffect(() => {
     const fetchData = async () => {
@@ -18,30 +20,27 @@ export default function Epg({ load }) {
       )
     }
 
-    const serializeStart = (data) => {
-      const showStart = data.map((schedule) =>
-        schedule.schedules.map((show) =>
-          setStart((oldArray) => [...oldArray, show.start])
-        )
-      )
-      return showStart
-    }
+    // const serializeStart = (data) => {
+    //   const showStart = data.map((schedule) =>
+    //     schedule.schedules.map((show) =>
+    //       setStart((oldArray) => [...oldArray, show.start])
+    //     )
+    //   )
+    //   return showStart
+    // }
 
     fetchData()
-    serializeStart(data)
-  }, [load])
+    // serializeStart(data)
+  }, [])
 
   return (
     <div className='epg-container'>
-      <FontAwesomeIcon
-        className='epg-dateline-icon'
-        icon={faStar}
-        color='grey'
-        size='lg'
-      />
-      <Dateline startDates={start} />
+      <div className='epg-dateline-icon'>
+        <FontAwesomeIcon icon={faStar} color='grey' size='lg' />
+      </div>
+      <Dateline />
       {/* <Timeline /> */}
-      {/* <Shows /> */}
+      <Channels channels={data} />
     </div>
   )
 }

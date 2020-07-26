@@ -1,12 +1,12 @@
-.epg-container {
-  background-color: #131313;
+.shows-container {
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-rows: repeat(9, minmax(4.5rem, auto));
 }
 
-.epg-dateline-icon {
+.shows-item {
   text-align: center;
-  padding-top: 30%;
+  padding-top: 25%;
+  color: white;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
