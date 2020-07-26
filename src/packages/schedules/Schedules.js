@@ -1,28 +1,16 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
+
+import Header from '../header/Header'
+import Epg from '../epg/Epg'
 
 export default function Schedules() {
-  const [data, setData] = useState([])
-  const [id, setId] = useState('')
-
-  useEffect(() => {
-    async function fetchData() {
-      await axios('http://localhost:1337/epg').then((response) =>
-        setData(response.data)
-      )
-    }
-
-    fetchData()
-  }, [])
+  const [show, setShow] = React.useState(true)
 
   return (
-    <ul>
-      {data.map((item) => (
-        <li key={item.id}>
-          <a>{item.title}</a>
-          <img src={item.images.LOGO} />
-        </li>
-      ))}
-    </ul>
+    <div className='schedules-container'>
+      <Header />
+      <Epg load={show} />
+      {show && <button onClick={() => setShow(false)}>Show Epg</button>}
+    </div>
   )
 }

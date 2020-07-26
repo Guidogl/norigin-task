@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Epg from '../epg/Epg'
+import Schedules from '../schedules/Schedules'
 
 export default function App() {
-  return <Epg />
+  return <Schedules />
 }

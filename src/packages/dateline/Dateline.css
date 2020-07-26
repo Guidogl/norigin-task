@@ -1,0 +1,18 @@
+.dateline-container {
+  background-color: #131313;
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: repeat(22, minmax(5rem, 1fr));
+  overflow-x: auto;
+  color: white;
+}
+
+/* .dateline-container::-webkit-scrollbar {
+  width: 0;
+} */
+
+.dateline-item {
+  place-self: center;
+  text-align: center;
+  padding: 1rem;
+}

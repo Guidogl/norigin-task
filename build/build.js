@@ -433,6 +433,28 @@ eval("\n\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modules/
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/packages/dateline/Dateline.css":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/packages/dateline/Dateline.css ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".dateline-container {\\r\\n  background-color: #131313;\\r\\n  grid-column-start: 2;\\r\\n  display: grid;\\r\\n  grid-template-columns: repeat(22, minmax(5rem, 1fr));\\r\\n  overflow-x: auto;\\r\\n  color: white;\\r\\n}\\r\\n\\r\\n/* .dateline-container::-webkit-scrollbar {\\r\\n  width: 0;\\r\\n} */\\r\\n\\r\\n.dateline-item {\\r\\n  place-self: center;\\r\\n  text-align: center;\\r\\n  padding: 1rem;\\r\\n}\\r\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/packages/dateline/Dateline.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/packages/epg/Epg.css":
+/*!************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/packages/epg/Epg.css ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".epg-container {\\r\\n  background-color: #131313;\\r\\n  display: grid;\\r\\n  grid-template-columns: 8% 92%;\\r\\n}\\r\\n\\r\\n.epg-dateline-icon {\\r\\n  place-self: center;\\r\\n  -webkit-box-shadow: 6px 0px 2px 0px rgba(0, 0, 0, 0.5);\\r\\n  -moz-box-shadow: 6px 0px 2px 0px rgba(0, 0, 0, 0.5);\\r\\n  box-shadow: 6px 0px 2px 0px rgba(0, 0, 0, 0.5);\\r\\n}\\r\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/packages/epg/Epg.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/packages/header/Header.css":
 /*!******************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/packages/header/Header.css ***!
@@ -711,7 +733,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return App; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _epg_Epg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../epg/Epg */ \"./src/packages/epg/Epg.js\");\n\n\nfunction App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_epg_Epg__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null);\n}\n\n//# sourceURL=webpack:///./src/packages/app/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return App; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _schedules_Schedules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../schedules/Schedules */ \"./src/packages/schedules/Schedules.js\");\n\n\nfunction App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_schedules_Schedules__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null);\n}\n\n//# sourceURL=webpack:///./src/packages/app/App.js?");
 
 /***/ }),
 
@@ -727,6 +749,112 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/packages/dateline/Dateline.css":
+/*!********************************************!*\
+  !*** ./src/packages/dateline/Dateline.css ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./Dateline.css */ \"./node_modules/css-loader/dist/cjs.js!./src/packages/dateline/Dateline.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/packages/dateline/Dateline.css?");
+
+/***/ }),
+
+/***/ "./src/packages/dateline/Dateline.js":
+/*!*******************************************!*\
+  !*** ./src/packages/dateline/Dateline.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Dateline; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _getDateList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getDateList */ \"./src/packages/dateline/getDateList.js\");\n/* harmony import */ var _Dateline_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Dateline.css */ \"./src/packages/dateline/Dateline.css\");\n/* harmony import */ var _Dateline_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Dateline_css__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nfunction Dateline({\n  startDates\n}) {\n  const [dates, setDates] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState([]);\n  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(() => {\n    setDates(Object(_getDateList__WEBPACK_IMPORTED_MODULE_1__[\"default\"])().epgDates);\n  }, []);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"dateline-container\"\n  }, dates.map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"dateline-item\",\n    key: item.date\n  }, item.date)));\n}\n\n//# sourceURL=webpack:///./src/packages/dateline/Dateline.js?");
+
+/***/ }),
+
+/***/ "./src/packages/dateline/getDateList.js":
+/*!**********************************************!*\
+  !*** ./src/packages/dateline/getDateList.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _getEndOfDay__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getEndOfDay */ \"./src/packages/dateline/getEndOfDay.js\");\n/* harmony import */ var _getStartOfDay__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getStartOfDay */ \"./src/packages/dateline/getStartOfDay.js\");\n/* harmony import */ var _getFirstDay__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getFirstDay */ \"./src/packages/dateline/getFirstDay.js\");\n/* harmony import */ var _getLastDay__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getLastDay */ \"./src/packages/dateline/getLastDay.js\");\n/* harmony import */ var _getDateShape__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./getDateShape */ \"./src/packages/dateline/getDateShape.js\");\n\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\n  const epgMinDate = Object(_getFirstDay__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  const epgMaxDate = Object(_getLastDay__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  const date = new Date(epgMinDate);\n  const epgDates = [];\n\n  do {\n    date.setDate(date.getDate() + 1);\n    epgDates.push({\n      date: Object(_getDateShape__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(date),\n      day: new Date(date).getDate(),\n      from: Number((Object(_getStartOfDay__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(date) / 1000).toFixed(0)),\n      to: Number((Object(_getEndOfDay__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(date) / 1000).toFixed(0))\n    });\n  } while (date.valueOf() < epgMaxDate.valueOf());\n\n  return {\n    epgDates: epgDates\n  };\n});\n\n//# sourceURL=webpack:///./src/packages/dateline/getDateList.js?");
+
+/***/ }),
+
+/***/ "./src/packages/dateline/getDateShape.js":
+/*!***********************************************!*\
+  !*** ./src/packages/dateline/getDateShape.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst abrvMonths = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];\nconst abrvDays = ['Sun', 'Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat'];\n/* harmony default export */ __webpack_exports__[\"default\"] = (day => day instanceof Date ? `${abrvDays[day.getDay()]}\\\n     ${day.getDate().toString()}.${abrvMonths[day.getMonth()]}.` : '');\n\n//# sourceURL=webpack:///./src/packages/dateline/getDateShape.js?");
+
+/***/ }),
+
+/***/ "./src/packages/dateline/getEndOfDay.js":
+/*!**********************************************!*\
+  !*** ./src/packages/dateline/getEndOfDay.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (date => {\n  const end = new Date(date);\n  end.setHours(23, 59, 59, 999);\n  return end.getTime();\n});\n\n//# sourceURL=webpack:///./src/packages/dateline/getEndOfDay.js?");
+
+/***/ }),
+
+/***/ "./src/packages/dateline/getFirstDay.js":
+/*!**********************************************!*\
+  !*** ./src/packages/dateline/getFirstDay.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\n  var date = new Date();\n  date.setDate(date.getDate() - 14);\n  date.setHours(0, 0, 0, 0);\n  return new Date(date).valueOf();\n});\n\n//# sourceURL=webpack:///./src/packages/dateline/getFirstDay.js?");
+
+/***/ }),
+
+/***/ "./src/packages/dateline/getLastDay.js":
+/*!*********************************************!*\
+  !*** ./src/packages/dateline/getLastDay.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\n  var date = new Date();\n  date.setDate(date.getDate() + 7);\n  date.setHours(23, 59, 59, 999);\n  return new Date(date).valueOf();\n});\n\n//# sourceURL=webpack:///./src/packages/dateline/getLastDay.js?");
+
+/***/ }),
+
+/***/ "./src/packages/dateline/getStartOfDay.js":
+/*!************************************************!*\
+  !*** ./src/packages/dateline/getStartOfDay.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (date => {\n  const start = new Date(date);\n  start.setHours(0, 0, 0, 0);\n  return start.getTime();\n});\n\n//# sourceURL=webpack:///./src/packages/dateline/getStartOfDay.js?");
+
+/***/ }),
+
+/***/ "./src/packages/epg/Epg.css":
+/*!**********************************!*\
+  !*** ./src/packages/epg/Epg.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./Epg.css */ \"./node_modules/css-loader/dist/cjs.js!./src/packages/epg/Epg.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/packages/epg/Epg.css?");
+
+/***/ }),
+
 /***/ "./src/packages/epg/Epg.js":
 /*!*********************************!*\
   !*** ./src/packages/epg/Epg.js ***!
@@ -735,7 +863,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Epg; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../header/Header */ \"./src/packages/header/Header.js\");\n/* harmony import */ var _schedules_Schedules__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../schedules/Schedules */ \"./src/packages/schedules/Schedules.js\");\n\n\n\nfunction Epg() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"epg-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_header_Header__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_schedules_Schedules__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n}\n\n//# sourceURL=webpack:///./src/packages/epg/Epg.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Epg; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ \"./node_modules/@fortawesome/react-fontawesome/index.es.js\");\n/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ \"./node_modules/@fortawesome/free-solid-svg-icons/index.es.js\");\n/* harmony import */ var _dateline_Dateline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../dateline/Dateline */ \"./src/packages/dateline/Dateline.js\");\n/* harmony import */ var _Epg_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Epg.css */ \"./src/packages/epg/Epg.css\");\n/* harmony import */ var _Epg_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Epg_css__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\nfunction Epg({\n  load\n}) {\n  const [data, setData] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState([]);\n  const [start, setStart] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState([]);\n  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(() => {\n    const fetchData = async () => {\n      await axios__WEBPACK_IMPORTED_MODULE_1___default()('http://localhost:1337/epg').then(response => setData(response.data));\n    };\n\n    const serializeStart = data => {\n      const showStart = data.map(schedule => schedule.schedules.map(show => setStart(oldArray => [...oldArray, show.start])));\n      return showStart;\n    };\n\n    fetchData();\n    serializeStart(data);\n  }, [load]);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"epg-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__[\"FontAwesomeIcon\"], {\n    className: \"epg-dateline-icon\",\n    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__[\"faStar\"],\n    color: \"grey\",\n    size: \"lg\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_dateline_Dateline__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n    startDates: start\n  }));\n}\n\n//# sourceURL=webpack:///./src/packages/epg/Epg.js?");
 
 /***/ }),
 
@@ -770,7 +898,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Schedules; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction Schedules() {\n  const [data, setData] = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])([]);\n  const [id, setId] = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])('');\n  Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useEffect\"])(() => {\n    async function fetchData() {\n      await axios__WEBPACK_IMPORTED_MODULE_1___default()('http://localhost:1337/epg').then(response => setData(response.data));\n    }\n\n    fetchData();\n  }, []);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"ul\", null, data.map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"li\", {\n    key: item.id\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", null, item.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    src: item.images.LOGO\n  }))));\n}\n\n//# sourceURL=webpack:///./src/packages/schedules/Schedules.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Schedules; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../header/Header */ \"./src/packages/header/Header.js\");\n/* harmony import */ var _epg_Epg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../epg/Epg */ \"./src/packages/epg/Epg.js\");\n\n\n\nfunction Schedules() {\n  const [show, setShow] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(true);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"schedules-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_header_Header__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_epg_Epg__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    load: show\n  }), show && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n    onClick: () => setShow(false)\n  }, \"Show Epg\"));\n}\n\n//# sourceURL=webpack:///./src/packages/schedules/Schedules.js?");
 
 /***/ })
 
