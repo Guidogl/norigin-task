@@ -6,6 +6,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 import Dateline from '../dateline/Dateline'
 
 import Channels from '../channels/Channels'
+import Shows from '../shows/Shows'
 
 import './Epg.css'
 
@@ -41,6 +42,7 @@ export default function Epg() {
       <Dateline />
       {/* <Timeline /> */}
       <Channels channels={data} />
+      <Shows shows={data} />
     </div>
   )
 }

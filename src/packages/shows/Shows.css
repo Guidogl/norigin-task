@@ -1,0 +1,15 @@
+.shows-container {
+  display: grid;
+  grid-template-rows: repeat(9, minmax(4.5rem, auto));
+  overflow-x: auto;
+  color: white;
+}
+
+.shows-parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0.5rem, auto));
+  grid-template-rows: 1;
+}
+
+/* .shows-item {
+} */

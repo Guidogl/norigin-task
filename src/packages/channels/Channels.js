@@ -8,9 +8,9 @@ export default function Shows({ channels }) {
   React.useEffect(() => {}, [])
 
   return (
-    <div className='shows-container'>
+    <div className='channels-container'>
       {channels.map((item) => (
-        <div className='shows-item' key={item.id}>
+        <div className='channels-item' key={item.id}>
           {item.title}
         </div>
         // <img
